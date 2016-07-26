@@ -1,27 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<title>Protect & Swerve</title>
+		<meta name="keywords" content="HTML5,CSS3,Template" />
+		<meta name="description" content="" />
+		<meta name="Author" content="Shemar Dacosta " />
+		      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta http-equiv="pragma" content="no-cache"/>
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name ="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta charset="utf-8"/>
 
-        <!-- Set the title bar of the page -->
-        <title>Protect & Swerve</title>
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
 
-        <!-- Set the background colour of the document -->
-        <style>
-            body {
-              background: #000000;
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+		<!-- REVOLUTION SLIDER -->
+		<link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
+
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout-dark.css" rel="stylesheet" type="text/css" />
+
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/green.css" rel="stylesheet" type="text/css" id="color_scheme" />
+		<style>
+		body {
+              background-image: url("assets/images/terror.jpg");
+			  background-repeat: no-repeat;
+			  background-size: cover;
               color:#cccccc;
               margin: 0px;
               padding: 0px;
               border: 0px;
             }
-            canvas {
+		canvas {
                       image-rendering: optimizeSpeed;
                       -webkit-interpolation-mode: nearest-neighbor;
                       -ms-touch-action: none;
@@ -30,8 +57,8 @@
                       border: 0px;
             }
             :-webkit-full-screen #canvas {
-                 width: 100%;
-                 height: 100%;
+                 width: 50%;
+                 height: 50%;
             }
             div.gm4html5_div_class
             {
@@ -68,28 +95,139 @@
             }
             /* END - Login Dialog Box */
             :-webkit-full-screen {
-               width: 100%;
-               height: 100%;
+               width: 50%;
+               height: 50%;
             }
         </style>
-    </head>
+	</head>
 
-    <body>
-	<center>
-        <div class="gm4html5_div_class" id="gm4html5_div_id">
-        <img src="game/splash.png" id="GM4HTML5_loadingscreen" alt="GameMaker:HTML5 loading screen" style="display:none;"/>
-            <!-- Create the canvas element the game draws to -->
-			<canvas id="canvas" width="640" height="480">
+	<body class="smoothscroll enable-animation">
+
+
+
+		</div>
+		<!-- /SLIDE TOP -->
+
+
+		<!-- wrapper -->
+		<div id="wrapper">
+
+			<!-- Top Bar -->
+			<div id="topBar">
+				<div class="container">
+						<ul class="top-links list-inline">
+						<li><a href="#">HOME</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">CONTACT</a></li>
+						<li><a href="#">ACCOUNT</a></li>
+					</ul>
+
+						<div class="social-icons pull-right hidden-xs">
+						<a href="https://www.facebook.com/protectswerve/?fref=ts" class="social-icon social-icon-sm social-icon-transparent social-facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook">
+							<i class="icon-facebook"></i>
+							<i class="icon-facebook"></i>
+						</a>
+						<a href="https://twitter.com/swerveprotect" class="social-icon social-icon-sm social-icon-transparent social-twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter">
+							<i class="icon-twitter"></i>
+							<i class="icon-twitter"></i>
+						</a>
+					</div>
+
+
+				</div>
+			</div>
+
+
+
+
+	
+            <canvas id="canvas" width="640" height="480">
                <p>Your browser doesn't support HTML5 canvas.</p>
             </canvas>
-
         </div>
-		</center>
 
-        <!-- Run the game code -->
+						
+
+					</ul>
+
+					<div class="tp-bannertimer"><!-- progress bar --></div>
+				</div>
+			</div>
+			<!-- /REVOLUTION SLIDER -->
+
+
+			<!-- INFO BAR -->
+			<section class="info-bar info-bar-clean">
+				<div class="container">
+
+					<div class="row">
+
+						<div class="col-sm-4">
+							<i class="glyphicon glyphicon-globe"></i>
+							<p>Here's the next step to <b>change</b> the <b>country</b></p>
+						</div>
+
+						<div class="col-sm-4">
+							<i class="glyphicon glyphicon-usd"></i>
+							<p>Support our <a href="https://www.kickstarter.com/projects/499437676/1621530014">Kickstarter</a> to make this <b>reality</b></p>
+						</div>
+
+						<div class="col-sm-4">
+							<i class="glyphicon glyphicon-user"></i>
+							<p>For teens, <br>
+							by teens</p>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+			<!-- /INFO BAR -->
+
+			<!-- FOOTER -->
+			<footer id="footer">
+	
+
+				<div class="copyright">
+					<div class="container">
+						<ul class="pull-right nomargin list-inline mobile-block">
+							<li><a href="#">Terms &amp; Conditions</a></li>
+							<li>&bull;</li>
+							<li><a href="#">Privacy</a></li>
+						</ul>
+						&copy; All Rights Reserved, Protect  & Swerve
+					</div>
+				</div>
+			</footer>
+			<!-- /FOOTER -->
+
+		</div>
+		<!-- /wrapper -->
+
+
+		<!-- SCROLL TO TOP -->
+		<a href="#" id="toTop"></a>
+
+
+		<!-- PRELOADER -->
+		<div id="preloader">
+			<div class="inner">
+				<span class="loader"></span>
+			</div>
+		</div><!-- /PRELOADER -->
+
+
+		<!-- JAVASCRIPT FILES -->
+		<script type="text/javascript">var plugin_path = 'assets/plugins/';</script>
+		<script type="text/javascript" src="assets/plugins/jquery/jquery-2.2.3.min.js"></script>
+
+		<script type="text/javascript" src="assets/js/scripts.js"></script>
+		<!-- Run the game code -->
         <script type="text/javascript" src="game/Top Down Shooter Engine (GamePad).js?IOGBC=1760169587"></script>
-    </body>
-    <embed name="song" src="song.mp3" loop="true" hidden="true" autostart="true">
+		<!-- REVOLUTION SLIDER -->
+		<script type="text/javascript" src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
+		<script type="text/javascript" src="assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
+		<script type="text/javascript" src="assets/js/view/demo.revolution_slider.js"></script>
 
+	</body>
 </html>
-
